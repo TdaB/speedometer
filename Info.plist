@@ -48,8 +48,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>We wanna stalk you...</string>
+    <string>Calculating your speed requires your positional data</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>We wanna stalk you...</string>
+    <string>Calculating your speed requires your positional data</string>
 </dict>
 </plist>
