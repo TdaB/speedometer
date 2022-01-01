@@ -2,18 +2,10 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var locationManager = LocationManager()
-  
-    var speed: String {
-        return locationManager.speed
-    }
-    
-    var speedColor: Color {
-        return locationManager.speedColor
-    }
-    
-    var speedAccuracy: String {
-        return locationManager.speedAccuracy
-    }
+    var speed: String { return locationManager.speed }
+    var speedColor: Color { return locationManager.speedColor }
+    var speedAccuracy: String { return locationManager.speedAccuracy }
+    let plusMinus = "\u{00B1}"
 
     var body: some View {
         VStack {
@@ -26,7 +18,7 @@ struct ContentView: View {
                 Text("mi/h")
                     .font(.system(size: 50, design: .rounded))
                     .padding(.bottom)
-                Text("Error: \(speedAccuracy) mi/h")
+                Text("Error: \(plusMinus)\(speedAccuracy) mi/h")
                     .font(.system(size: 20, design: .rounded))
                     .padding(.bottom)
             }
